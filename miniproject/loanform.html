@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Loan Application Form</title>
+		<style type="text/css">
+		td {color:black;}
+		p {text-transform:uppercase;}
+		input:focus {color:blue;background-color:lightgreen;}
+		td {border:0px;}
+		textarea:focus {color:blue;background-color:pink;}
+		body {
+			font-family:arial;
+			font-style:italic;
+			}
+		</style>
+		<script src="validloan.js"></script>
+	</head>
+	<body align="center">
+	<form name="TF" onsubmit="return validloan();">	
+		<table align="center" border="4" cellpadding="7">	
+		<tr><td colspan="2"><h2>Loan Application Form</h2></td></tr>
+		<tr><td align="center">Do you have a loan already ?</td><td align="center"><input type="radio" name="already" value="Yes"/>Yes
+				<input type="radio" name="already" value="No"/>NO</td></tr>
+		<tr><td align="center">Customer Name:</td><td><input type="text" name="name" placeholder="Your Name" pattern=[a-zA-Z]{3,20} title="name" required/></td></tr>
+		<tr><td align="center">Mobile Number:</td><td><input type="text" name="MobileNo" pattern=[789]{1}[0-9]{9} placeholder="10 digits required" required></td></tr>		
+		<tr><td align="center">EmailId:</td><td><input type="email" name="EmailId"  placeholder="Enter Your mail ID" required/></td></tr>
+		<tr><td align="center">Proof of Identity:</td>
+					<td><input type="checkbox" name="proof" value="PAN Card">PAN Card<input type="checkbox" name="proof" value="VoterID Card">VoterID Card<br>
+					<input type="checkbox" name="proof" value="Passport">Passport<input type="checkbox" name="proof" value="Driving License">Driving License</td>
+		<tr><td align="center">Loan ammount:</td><td align="center"><select name="amount">
+			<option value="">loan ammount</option>
+					<option value="50000">50000</option>
+					<option value="100000">100000</option>
+					<option value="500000">500000</option>
+					<option value="1000000">1000000</option>
+					</select></td>
+		<tr><td align="center"><input type="reset" name="reset" required/></td><td align="center"><input type="Submit" name="Submit" /></td></tr>
+		<table>
+	</body>	
+</html>	

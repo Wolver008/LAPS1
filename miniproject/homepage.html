@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;	background-image: url("ak47.jpg");
+}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1180px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: white;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.8s;
+  animation-name: fade;
+  animation-duration: 1.8s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+section {
+    display: -webkit-flex;
+    display: flex;
+}
+#navbar {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 98%;
+  display: block;
+  transition: top 0.3s;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color:green;
+  color:white;
+}
+</style>
+</head>
+<body>
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="home3.jpg" style="width:100%">
+  <div class="text">Trust</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="home1.jpg" style="width:100%">
+  <div class="text">Support</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="home2.jpg" style="width:100%">
+  <div class="text">Faith</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="home.jpg" style="width:100%">
+  <div class="text">Value</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+</div>
+<section>
+  <nav>
+    <ul>
+      <li><a href="file:///C:/Users/akalathi/Desktop/miniproject/form.html">Purchase</a></li>
+      <li><a href="file:///C:/Users/akalathi/Desktop/miniproject/ConstructionForm.html">Construction</a></li>
+      <li><a href="#">Extension</a></li>
+      <li><a href="#">Renovation</a></li>
+    </ul>
+  </nav>
+
+  
+  <div id="navbar">
+  <a href="file:///C:/Users/akalathi/Desktop/miniproject/homepage.html#">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="https://online.hometrustbanking.com/auth/Terms?returnUrl=%2Fauth%2FSignIn%3Fwa%3Dwsignin1.0%26wtrealm%3Dhttps%253A%252F%252Fonline.hometrustbanking.com%252Fbanking%252F%26wctx%3Drm%253D0%2526id%253Dpassive%2526ru%253D%25252fbanking%25252fstart%25252f%26wct%3D2018-09-29T10%253A32%253A52Z">Terms and Conditions</a>
+  <a href="#Policies">Policies</a>
+  <a href="#About">About</a>
+</div>
+
+<div style="padding:15px 15px 880px;font-size:30px;margin-top:30px;"/>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html> 

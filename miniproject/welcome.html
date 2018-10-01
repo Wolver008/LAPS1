@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    font-family: Arial;
+    color: darkblue;
+	background-image: url("ak47.jpg");
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.left {
+    left: 0;
+  }
+
+.right {
+    right: 0;
+  }
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-51%, -50%);
+    text-align: center;
+}
+
+.centered img {
+    width: 300px;
+    border-radius: 55%;
+}
+</style>
+</head>
+<body>
+
+<div class="split left">
+  <div class="centered">
+   <a href="file:///C:/Users/akalathi/Desktop/miniproject/homepage.html#"><img src="cust.jpg" alt="Avatar woman"></a>
+    <h2>I am a Customer</h2>
+    <p>Welcome click the image to view offers</p>
+  </div>
+</div>
+
+<div class="split right">
+  <div class="centered">
+    <a href="file:///C:/Users/akalathi/Desktop/miniproject/login.html"><img src="admin.jpg" alt="Avatar man"></a>
+    <h2>I am an Admin</h2>
+    <p>Please click the image to Login</p>
+  </div>
+</div>
+     
+</body>
+</html> 

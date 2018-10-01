@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>Login Page</title>
+		<style type="text/css">
+		h1 
+			{
+				align:center;
+				color:darkblue;
+			}
+		input:focus {color:blue;background-color:pink;}	
+		table
+			{
+				margin-top:80px;
+				margin-left:140px;
+				border: 0px grooved white;border-radius:18px;background-color:white;opacity:0.6;}
+		td 
+			{
+				color:grey;
+				border: 0px dashed lightblue;border-radius:15px;
+			}
+		body 
+			{
+				color:black;
+				background-repeat: norepeat;
+				background-image: url("ak47.jpg");
+				font-family:arial;
+				font-style:italic;
+			}	
+			x
+			{
+				color:black;
+				font-style:bold;
+			}
+			y
+			{
+				font-size:11;	
+			}
+		</style>
+		<script src="login.js"></script>
+	</head>
+			<body align="center">
+			<form name="login" onsubmit="login()">	
+			<table align="left" border="0" cellpadding="11">		
+				<tr><td colspan="2" align="center"><h1>Admin Login</h1></td></tr>
+				<tr><td align="center"><x>User ID</x></td><td><input type="text" name="UserID" placeholder="Employee Id" pattern=[0-9]{6} required/></td></tr>
+				<tr><td align="center"><x>Password</x></td><td><input type="password" name="password" placeholder="Atleast 8 char required" pattern="[a-zA-Z0-9]{8,20}"required/></td></tr>
+				<tr><td><center><input type="Submit" name="Submit" value="Login"/><a href="file:///C:/Users/akalathi/Desktop/miniproject/homepage.html"></center></td></tr>
+				<tr><td><y><x>Facing Issue...?  </x></y><td/><td><y><a href="mailto:kalathilabhijeet8@gmail.com">Forgot Password</a></y><td/></tr>
+			</table>
+		</form>
+	</body>
+</html>
